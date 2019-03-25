@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/new_chatapp
+    destination: /home/ubuntu/cd-demo
 permissions:
-  - object: /home/ubuntu/new_chatapp
+  - object: /home/ubuntu/cd-demo
     pattern: "**"
     owner: ubuntu
     group: ubuntu
@@ -27,7 +27,4 @@ hooks:
     - location: scripts/start_application.sh
       timeout: 6000
       runas: ubuntu
-  ApplicationStop:
-    - location: scripts/stop_application.sh
-      timeout: 6000
-      runas: ubuntu
+
