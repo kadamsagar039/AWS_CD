@@ -4,4 +4,4 @@ virtualenv /home/ubuntu/venv
 chown ubuntu:ubuntu /home/ubuntu/venv
 chown ubuntu:ubuntu /home/ubuntu/venv/*
 source /home/ubuntu/venv/bin/activate
-pip install -r /home/ubuntu/new_chatapp/requirements/staging.txt
+pip install -r /home/ubuntu/cd-demo/requirements/staging.txt
