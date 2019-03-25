@@ -4,8 +4,8 @@ After=network.target
 [Service]
 User=ubuntu
 Group=www-data
-WorkingDirectory=/home/ubuntu/www/new_chatapp/fundoo
-ExecStart=/home/ubuntu/www/venv/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/www/new_chatapp/fundoo/fundoo.sock fundoo.wsgi:application
+WorkingDirectory=/home/ubuntu/cd-demo/fundoo
+ExecStart=/home/ubuntu/venv/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/cd-demo/fundoo/fundoo.sock fundoo.wsgi:application
 [Install]
 WantedBy=multi-user.target
 
