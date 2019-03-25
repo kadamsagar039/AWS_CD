@@ -17,7 +17,7 @@ DEBUG = True
 
 # AUTH_USER_MODEL = "fundooapp.user"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Email verification
@@ -132,6 +132,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
