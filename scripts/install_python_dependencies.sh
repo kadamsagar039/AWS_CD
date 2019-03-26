@@ -1,5 +1,6 @@
 #!/bin/bash
 chown ubuntu:ubuntu /home/ubuntu
+pip3 install virtualenv
 virtualenv /home/ubuntu/venv
 chown ubuntu:ubuntu /home/ubuntu/venv
 chown ubuntu:ubuntu /home/ubuntu/venv/*
