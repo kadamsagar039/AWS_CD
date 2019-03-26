@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /fundoo
+  - source: /
     destination: /home/ubuntu/cd-demo
 permissions:
   - object: /home/ubuntu/cd-demo
