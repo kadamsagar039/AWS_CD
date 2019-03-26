@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/cd-demo
+    destination: /home/ubuntu/cd-demo/
 permissions:
   - object: /home/ubuntu/cd-demo
     pattern: "**"
