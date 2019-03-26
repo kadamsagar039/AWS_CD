@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install python3-pip python3-dev nginx git
+sudo apt-get install python3-pip python3-dev nginx git -y
 cd /home/ubuntu/cd-demo/
 source /home/ubuntu/venv/bin/activate
 python3 /home/ubuntu/cd-demo/fundoo/manage.py collectstatic
