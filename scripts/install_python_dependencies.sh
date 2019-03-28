@@ -1,8 +1,9 @@
 #!/bin/bash
-chown ubuntu:ubuntu /home/ubuntu
-virtualenv /home/ubuntu/venv
-chown ubuntu:ubuntu /home/ubuntu/venv
-chown ubuntu:ubuntu /home/ubuntu/venv/*
-source /home/ubuntu/venv/bin/activate
+
 pip3 install -r /home/ubuntu/cd-demo/requirements/base.txt
+pip3 install django bcrypt django-extensions
 pip3 install gunicorn
+cd cd-demo/fundoo/
+gunicorn --bind 0.0.0.0:8000 fundoo.wsgi:application
+
+
