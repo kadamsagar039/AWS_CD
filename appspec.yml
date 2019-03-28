@@ -15,13 +15,13 @@ hooks:
       runas: ubuntu
   AfterInstall:
     - location: scripts/gunicorn.sh
-      timeout: 6000
+      timeout: 600
       runas: ubuntu
     - location: scripts/ngnix.sh
-      timeout: 6000
+      timeout: 600
       runas: ubuntu
   ApplicationStart:
     - location: scripts/start_application.sh
-      timeout: 6000
+      timeout: 600
       runas: ubuntu
 
