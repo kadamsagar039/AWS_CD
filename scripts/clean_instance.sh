@@ -1,1 +1,1 @@
-sudo rm -rf /tmp/*
+sudo rm -rf /home/ubuntu/*
